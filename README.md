@@ -1,2 +1,0 @@
-# myResume
-My Online Resume

@@ -12,10 +12,10 @@
 
 <script>
 $(document).ready(function(){
-        $("#header").fadeIn(2000);
+        $("#header").fadeIn(8000);
         $("#column1").fadeIn(4000);
         $("#column3").fadeIn(6000);
-        $("#footer").fadeIn(8000);
+        $("#footer").fadeIn(2000);
     });
 </script>
 
@@ -42,6 +42,15 @@ $(document).ready(function(){
 });
 </script> 
 
+<script type="text/javascript">
+  $( document ).ready(function() {
+    setTimeout(function(){
+    // Show the Modal on load
+   $( "#button1" ).trigger( "click" );
+     },3000);
+  });
+</script>
+
 <!-- <script type="text/javascript">
 $(document).ready(function() {
     $('#Test').load('test.html');
@@ -61,59 +70,31 @@ $(document).ready(function() {
 
     <div id="column1" class="col-sm-3" style="display:none;background-color: white;">
       <h3>Categories</h3>
-       <button type="button" id="button1" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo1" style="text-align: left;">Automotive & Gadgets</button>
-        <div id="demo1" class="collapse">
-        Content.
-        </div>
-        <button type="button" id="button2" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo2" style="text-align: left;">Cameras</button>
-        <div id="demo2" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo3" style="text-align: left;">Consumer Electronics</button>
-        <div id="demo3" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo4" style="text-align: left;">Fashion & Accessories</button>
-        <div id="demo4" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo5" style="text-align: left;">Health & Beauty</button>
-        <div id="demo5" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo6" style="text-align: left;">Mobiles & Tablets</button>
-        <div id="demo6" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo7" style="text-align: left;">Sports & Outdoors</button>
-        <div id="demo7" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo8" style="text-align: left;">Travel, Luggage & Bags</button>
-        <div id="demo8" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo9" style="text-align: left;">Vouchers & Services</button>
-        <div id="demo9" class="collapse">
-        Content.
-        </div>
-        <button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#demo10" style="text-align: left;">Wathes</button>
-        <div id="demo10" class="collapse">
-        Content.
-        </div>
+       <button type="button" id="button1" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Todays Sale</button>
+        <button type="button" id="button2" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Cameras</button>
+        <button type="button" id="button2" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Consumer Electronics</button>
+        <!--Fashion & Accessories
+        Health & Beauty
+        Mobiles & Tablets
+        Sports & Outdoors
+        Travel, Luggage & Bags
+        Vouchers & Services
+        Watches -->
     </div>
 
 
     <div id="column2" class="col-sm-6" style="display: flex;align-items: center;justify-content:center;">
-     <img id="laz" src="images\laz.png" style="max-width: 60%;display: flex;align-items: center;justify-content:center;padding-top: 50px;">
+     <img id="laz" src="images\laz.png" style="max-width: 70%;display: flex;align-items: center;justify-content:center;padding-top: 40px;">
       <div id="Test"></div>
       <div id="Test2"></div>
     </div>
 
 
-    <div id="column3" class="col-sm-3" style="display:none;">
-      <h3>Column 3</h3>
+    <div id="column3" class="col-sm-3" style="display:none;height: 448px;">
+      <h3>Best Offers</h3>
       <iframe width="100%" height="250" src="https://lap.lazada.com/banner/dynamic.php?banner_id=59cce7367cfac&theme=1&p=1" frameborder="0" scrolling="no"></iframe>
+      <h3>Quick Search</h3>
+      <iframe width="100%" height="35" src="https://lap.lazada.com/searchbar/searchbar.php?aff_id=209025&country=ph&placeholder=Search%20for%20products" frameborder="0" scrolling="no"></iframe>
     </div>
   
 
@@ -158,24 +139,22 @@ $(document).ready(function(){
 
 
 <!--Footer-->
-<footer class="page-footer font-small blue pt-4 mt-4">
+<footer class="page-footer font-small blue pt-4 mt-4" style="margin-top: 10px;">
 
     <!--Footer Content-->
     <div class="container-fluid text-center text-md-left">
       <br>
-      <br>
-      <br>
-      <br>
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">lazadadailydeals.com </a>
     </div>
     <!--Footer Content-->
         
-        </div>
-    </div>
+
 
     <!--Copyright-->
     <div id="footer" class="footer-copyright py-3 text-center" style="display: none;">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">lazadadailydeals.com </a>
+        <!-- © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">lazadadailydeals.com </a> -->
     </div>
     <!--/.Copyright-->
 

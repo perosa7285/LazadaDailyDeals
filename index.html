@@ -11,155 +11,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
 <script>
-$(document).ready(function(){
-        $("#header").fadeIn(8000);
-        $("#column1").fadeIn(4000);
-        $("#column3").fadeIn(6000);
-        $("#footer").fadeIn(2000);
+$(function(){
+      $("#index").load("main.html");
     });
-</script>
-
-<script>
-$(document).ready(function(){
-    $("#home").click(function(){
-        $("#laz").load("laz.png");
-        $("#laz").show("laz.png");
-        $("#Test").hide("test.html");
-        $("#Test2").hide("test2.html");
-    });
-    $("#button1").click(function(){
-        $("#Test").load("test.html");
-        $("#Test").show("test.html");
-        $("#laz").hide("laz.png");
-        $("#Test2").hide("test2.html");
-    });
-    $("#button2").click(function(){
-        $("#Test2").load("test2.html");
-        $("#Test2").show("test2.html");
-        $("#laz").hide("laz.png");
-        $("#Test").hide("test.html");
-    });
-});
 </script> 
-
-<script type="text/javascript">
-  $( document ).ready(function() {
-    setTimeout(function(){
-    // Show the Modal on load
-   $( "#button1" ).trigger( "click" );
-     },3000);
-  });
-</script>
-
-<!-- <script type="text/javascript">
-$(document).ready(function() {
-    $('#Test').load('test.html');
-});
-</script> -->
 
 </head>
 <body>
 
-<div id="header" class="container text-center" style="background-color: #F57225;display: none;margin-bottom: 10px;">
-  <button type="button" id="home" style="padding: 0; border: none; background: none;"><h2>Lazada Daily Deals</h2></button>
-</div>
+<!-- index -->
+<div id="index"></div>
 
-<div class="container">
-  <div class="row">
-    
-
-    <div id="column1" class="col-sm-3" style="display:none;background-color: white;">
-      <h3>Categories</h3>
-       <button type="button" id="button1" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Todays Sale</button>
-        <button type="button" id="button2" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Cameras</button>
-        <button type="button" id="button2" class="btn btn-success btn-block" style="text-align: left;margin-top: 0px;">Consumer Electronics</button>
-        <!--Fashion & Accessories
-        Health & Beauty
-        Mobiles & Tablets
-        Sports & Outdoors
-        Travel, Luggage & Bags
-        Vouchers & Services
-        Watches -->
-    </div>
-
-
-    <div id="column2" class="col-sm-6" style="display: flex;align-items: center;justify-content:center;">
-     <img id="laz" src="images\laz.png" style="max-width: 70%;display: flex;align-items: center;justify-content:center;padding-top: 40px;">
-      <div id="Test"></div>
-      <div id="Test2"></div>
-    </div>
-
-
-    <div id="column3" class="col-sm-3" style="display:none;height: 448px;">
-      <h3>Best Offers</h3>
-      <iframe width="100%" height="250" src="https://lap.lazada.com/banner/dynamic.php?banner_id=59cce7367cfac&theme=1&p=1" frameborder="0" scrolling="no"></iframe>
-      <h3>Quick Search</h3>
-      <iframe width="100%" height="35" src="https://lap.lazada.com/searchbar/searchbar.php?aff_id=209025&country=ph&placeholder=Search%20for%20products" frameborder="0" scrolling="no"></iframe>
-    </div>
-  
-
-  </div> <!--End of Row-->
-</div> <!--End of Container-->
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="background-color: skyblue;">
-          <h4 class="modal-title text-center">Hi there! Haven't I seen you here before?</h4>
-        </div>
-        <div class="panel panel-success">
-          <div class="panel-heading text-center" style="text-decoration: underline;">If you still haven't subscribed yet please do like our page for more sales updates.</div>
-        </div>
-        <div id="box1" class="modal-body" style="display: flex;align-items: center;justify-content:center;">
-          <img src="images\laz_action.gif" style="max-width: 50%; margin-top: -40px;">
-        </div>
-        <div id="box2" class="modal-body" style="display: flex;align-items: center;justify-content:center;">
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flazadadailydeals%2F&width=132&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId=978796982239778" width="132" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class="modal-footer" style="background-color: skyblue;">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-<script>
-$(document).ready(function(){
-  //Delay modal show
-  setTimeout(function(){
-    // Show the Modal on load
-    $("#myModal").modal("show");
-  },5000);
-});
-</script>
-
-
-<!--Footer-->
-<footer class="page-footer font-small blue pt-4 mt-4" style="margin-top: 10px;">
-
-    <!--Footer Content-->
-    <div class="container-fluid text-center text-md-left">
-      <br>
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">lazadadailydeals.com </a>
-    </div>
-    <!--Footer Content-->
-        
-
-
-    <!--Copyright-->
-    <div id="footer" class="footer-copyright py-3 text-center" style="display: none;">
-        <!-- © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">lazadadailydeals.com </a> -->
-    </div>
-    <!--/.Copyright-->
-
-</footer>
-<!--/.Footer-->
                       
 
 </body>
